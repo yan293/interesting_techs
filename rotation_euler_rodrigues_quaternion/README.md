@@ -39,7 +39,7 @@ Rotation matrix is a 3x3 matrix which could represnt a unique rotation transform
 - All columns are orthonomal to each other ![eq:col_prod](https://latex.codecogs.com/gif.latex?%5Cmathbf%7Br_%7B1%7D%7D%5ET%20%5Cmathbf%7Br_%7B2%7D%7D%20%3D%20%5Cmathbf%7Br_%7B1%7D%7D%5ET%20%5Cmathbf%7Br_%7B3%7D%7D%20%3D%20%5Cmathbf%7Br_%7B2%7D%7D%5ET%20%5Cmathbf%7Br_%7B3%7D%7D%20%3D%200)
 
 
-### Pros and Cons of rotation matri
+### Pros and Cons of rotation matrix
 
 #### Pros:
 - Uniquely represents a rotation
@@ -135,7 +135,7 @@ When the pich angle is pi/2, then we can not distinguish the roll and yaw angles
 ![eq:gimbal_lock](https://latex.codecogs.com/gif.latex?%5Cbegin%7Balignment%7D%20%5Cmathbf%7BR%7D%28%5Cphi%2C%20%5Ctheta%2C%20%5Cpsi%29%20%26%3D%20%5Cbegin%7Bbmatrix%7D%200%20%26%200%20%26%201%20%5C%5C%20cos%28%5Cpsi%29sin%28%5Cphi%29%20&plus;%20sin%28%5Cpsi%29cos%28%5Cphi%29%20%26%20cos%28%5Cpsi%29cos%28%5Cphi%29%20-%20sin%28%5Cpsi%29sin%28%5Cphi%29%20%26%200%20%5C%5C%20-cos%28%5Cpsi%29cos%28%5Cphi%29%20&plus;%20sin%28%5Cpsi%29sin%28%5Cphi%29%20%26%20sin%28%5Cpsi%29cos%28%5Cphi%29%20&plus;%20cos%28%5Cpsi%29sin%28%5Cphi%29%20%26%200%20%5Cend%7Bbmatrix%7D%20%5C%5C%20%26%3D%20%5Cbegin%7Bbmatrix%7D%200%20%26%200%20%26%201%20%5C%5C%20sin%28%5Cpsi&plus;%5Cphi%29%20%26%20cos%28%5Cpsi&plus;%5Cphi%29%20%26%200%20%5C%5C%20-cos%28%5Cpsi&plus;%5Cphi%29%20%26%20sin%28%5Cpsi&plus;%5Cphi%29%20%26%200%20%5Cend%7Bbmatrix%7D%20%5Cend%7Balignment%7D)
 
 
-### Pros and Cons of rotation matri
+### Pros and Cons of Euler angles
 
 #### Pros:
 - Easy to understand
@@ -163,7 +163,17 @@ Let the original vector be **u**, we now rotate it around a direction vector **n
 
 We can then use a [1x3] vector to represent the Rodrigues transform:
 
-![eq:rod_vect](https://latex.codecogs.com/gif.latex?%5Cmathbf%7BRod%7D%20%3D%20%28a_1%2C%20a_2%2C%20a_3%29%2C%20%7C%5Cmathbf%7BRod%7D%7C%20%3D%20%5Calpha%2C%20%5Cfrac%7B%5Cmathbf%7BRod%7D%7D%7B%7C%5Cmathbf%7BRod%7D%7C%7D%20%3D%20%5Cmathbf%7Bn%7D)
+![eq:rod_vect](https://latex.codecogs.com/gif.latex?cos%28%5Calpha%29%5Cmathbf%7Bu%7D%20&plus;%20%281%20-%20cos%28%5Calpha%29%29%28%5Cmathbf%7Bn%7D%5Ccdot%5Cmathbf%7Bu%7D%29%5Cmathbf%7Bn%7D%20&plus;%20sin%28%5Calpha%29%28%5Cmathbf%7Bn%7D%5Ctimes%5Cmathbf%7Bu%7D%29)
+
+
+### Pros and Cons of Rodrigues vector
+
+#### Pros:
+- No Gimbal lock
+- Less variables
+
+#### Cons:
+- Gimbal lock
 
 <!------------------------------------------------>
 
