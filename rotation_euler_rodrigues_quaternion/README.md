@@ -26,10 +26,10 @@ Rotation matrix is a 3x3 matrix which could represnt a unique rotation transform
 - All columns are orthonomal to each other ![eq:col_prod](https://latex.codecogs.com/gif.latex?%5Cmathbf%7Br_%7B1%7D%7D%5ET%20%5Cmathbf%7Br_%7B2%7D%7D%20%3D%20%5Cmathbf%7Br_%7B1%7D%7D%5ET%20%5Cmathbf%7Br_%7B3%7D%7D%20%3D%20%5Cmathbf%7Br_%7B2%7D%7D%5ET%20%5Cmathbf%7Br_%7B3%7D%7D%20%3D%200)
 
 
-### Pros of rotation matrix:
+#### Pros of rotation matrix:
 - Uniquely represents a rotation
 
-### Cons of rotation matrix:
+#### Cons of rotation matrix:
 - 9 variables to represent 3 variables (redundant)
 
 
@@ -37,6 +37,18 @@ Rotation matrix is a 3x3 matrix which could represnt a unique rotation transform
 <!------------------------------------------------>
 
 ## 2. Euler Angles
+
+Euler angles are a set of three angles representing rotations around three (x, y, z) axises.
+
+
+### Right Hand Rule
+
+- x-axis forward, from the index finger
+- y-axis left, from the middle finger
+- z-axis up, from the thumb finger
+- **Roll** ![roll](https://latex.codecogs.com/gif.latex?%5Cphi) about x-axis
+- **Pitch** ![pitch](https://latex.codecogs.com/gif.latex?%5Ctheta) about y-axis
+- **Yaw** ![yaw](https://latex.codecogs.com/gif.latex?%5Cpsi) about z-axis
 
 ### Rotate around <math>x</math> axis
 ![eq:rot_mat_x](https://latex.codecogs.com/gif.latex?R_x%20%3D%20%5Cbegin%7Bbmatrix%7D%201%20%26%200%20%26%200%20%5C%5C%200%20%26%20cos%28%5Ctheta_x%29%20%26%20-sin%28%5Ctheta_x%29%20%5C%5C%200%20%26%20sin%28%5Ctheta_x%29%20%26%20cos%28%5Ctheta_x%29%20%5Cend%7Bbmatrix%7D)
