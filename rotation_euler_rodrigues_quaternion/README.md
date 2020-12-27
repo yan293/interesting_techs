@@ -67,6 +67,11 @@ Euler angles are a set of three angles representing rotations around three (x, y
 
 ![eq:rot_mat_y](https://latex.codecogs.com/gif.latex?R_z%20%3D%20%5Cbegin%7Bbmatrix%7D%20cos%28%5Ctheta_z%29%20%26%20-sin%28%5Ctheta_z%29%20%26%200%20%5C%5C%20sin%28%5Ctheta_z%29%20%26%20cos%28%5Ctheta_z%29%20%26%200%20%5C%5C%200%20%26%200%20%26%201%20%5Cend%7Bbmatrix%7D)
 
+
+### Rotation matrix to elementary Euler angles
+
+A rotation matrix can be formed from a maximum of 3 sequential rotations about the primary axes:  ![eq:mat_to_euler](https://latex.codecogs.com/gif.latex?%5Cmathbf%7BR%7D%28%5Cphi%2C%20%5Ctheta%2C%20%5Cpsi%29).
+
 ### Rotation using Proper Euler Angles (6 ways)
 
 ### Rotation using Trait-Bryan (6 ways)
