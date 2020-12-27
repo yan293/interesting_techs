@@ -74,9 +74,19 @@ A rotation matrix can be formed from a maximum of 3 sequential rotations about t
 
 ![eq:mat_to_euler](https://latex.codecogs.com/gif.latex?%5Cmathbf%7BR%7D%28%5Cphi%2C%20%5Ctheta%2C%20%5Cpsi%29).
 
-- These rotations can be in any sequence, but not the same axis in succession. Since rotating along the same axis twice equals to rotating the axis once with a large angle.
+- These rotations can be in any sequence, but not the same axis in succession. Since rotating along the same axis twice equals to rotating the axis once with a large angle. ![eq:two_euler](https://latex.codecogs.com/gif.latex?%5Cmathbf%7BR%7D_x%28%5Cphi%29%5Cmathbf%7BR%7D_x%28%5Cphi%29%20%3D%20%5Cmathbf%7BR%7D_x%282%5Cphi%29)
 
-![eq:two_euler](https://latex.codecogs.com/gif.latex?%5Cmathbf%7BR%7D_x%28%5Cphi%29%5Cmathbf%7BR%7D_x%28%5Cphi%29%20%3D%20%5Cmathbf%7BR%7D_x%282%5Cphi%29)
+- In total there are 3x2x2 = 12 combinations.
+
+#### Euler Angles
+
+Rotate along on axis twice (1st and 3rd).
+
+
+#### Cardan (or Tait–Bryan) Angles
+
+Rotate along each primary axis once.
+
 
 ### Rotation using Proper Euler Angles (6 ways)
 
