@@ -123,11 +123,7 @@ Rotate along each primary axis once, 3x2x1 = 6.
 
 #### Roll, Pitch, and Yaw from Rotation
 
-If rotating arong x-axis, then y-axis, then z-axis:
-
-![eq:mat_to_roll_pitch_yaw](https://latex.codecogs.com/gif.latex?%5Cbegin%7Balignment%7D%20%5Cmathbf%7BR%7D%28%5Cphi%2C%20%5Ctheta%2C%20%5Cpsi%29%20%26%3D%20%5Cbegin%7Bbmatrix%7D%20cos%28%5Cpsi%29cos%28%5Ctheta%29%20%26%20cos%28%5Cpsi%29sin%28%5Ctheta%29sin%28%5Cphi%29%20-%20sin%28%5Cpsi%29cos%28%5Cphi%29%20%26%20cos%28%5Cpsi%29sin%28%5Ctheta%29cos%28%5Cphi%29%20&plus;%20sin%28%5Cpsi%29sin%28%5Cphi%29%20%5C%5C%20sin%28%5Cpsi%29cos%28%5Ctheta%29%20%26%20sin%28%5Cpsi%29sin%28%5Ctheta%29sin%28%5Cphi%29%20&plus;%20cos%28%5Cpsi%29cos%28%5Cphi%29%20%26%20sin%28%5Cpsi%29sin%28%5Ctheta%29cos%28%5Cphi%29%20-%20cos%28%5Cpsi%29sin%28%5Cphi%29%20%5C%5C%20-sin%28%5Ctheta%29%20%26%20cos%28%5Ctheta%29sin%28%5Cphi%29%20%26%20cos%28%5Ctheta%29cos%28%5Cphi%29%20%5Cend%7Bbmatrix%7D%5C%5C%20%26%3D%20%5Cbegin%7Bbmatrix%7D%20r_%7B11%7D%20%26%20r_%7B12%7D%20%26%20r_%7B13%7D%20%5C%5C%20r_%7B21%7D%20%26%20r_%7B22%7D%20%26%20r_%7B23%7D%20%5C%5C%20r_%7B31%7D%20%26%20r_%7B32%7D%20%26%20r_%7B33%7D%20%5Cend%7Bbmatrix%7D%20%5Cend%7Balignment%7D)
-
-then,
+If rotating around z-axis, then y-axis, then x-axis, you can solve the roll pitch and yaw angles from Rotation matrix,
 
 ![eq:mat_to_roll_pitch_yaw_2](https://latex.codecogs.com/gif.latex?%5Cphi%20%3D%20atan2%28r_%7B32%7D%2C%20r_%7B33%7D%29%5C%5C%20%5Cpsi%20%3D%20atan2%28r_%7B21%7D%2C%20r_%7B11%7D%29%5C%5C%20%5Ctheta%20%3D%20%5Cbegin%7Bcases%7D%20atan2%28-r_%7B31%7D%2C%20%5Cfrac%7Br_%7B21%7D%7D%7Bsin%28%5Cpsi%29%7D%29%2C%20%26%20%5Ctext%7Bif%7D%5C%20cos%28%5Cpsi%29%3D0%20%5C%5C%20atan2%28-r_%7B31%7D%2C%20%5Cfrac%7Br_%7B11%7D%7D%7Bcos%28%5Cpsi%29%7D%29%2C%20%26%20%5Ctext%7Botherwise%7D%20%5Cend%7Bcases%7D)
 
@@ -136,7 +132,7 @@ then,
 
 When the pich angle is pi/2, then we can not distinguish the roll and yaw angles:
 
-![eq:gimbal_lock](https://latex.codecogs.com/gif.latex?%5Cbegin%7Balignment%7D%20%5Cmathbf%7BR%7D%28%5Cphi%2C%20%5Ctheta%2C%20%5Cpsi%29%20%26%3D%20%5Cbegin%7Bbmatrix%7D%20cos%28%5Cpsi%29cos%28%5Ctheta%29%20%26%20cos%28%5Cpsi%29sin%28%5Ctheta%29sin%28%5Cphi%29%20-%20sin%28%5Cpsi%29cos%28%5Cphi%29%20%26%20cos%28%5Cpsi%29sin%28%5Ctheta%29cos%28%5Cphi%29%20&plus;%20sin%28%5Cpsi%29sin%28%5Cphi%29%20%5C%5C%20sin%28%5Cpsi%29cos%28%5Ctheta%29%20%26%20sin%28%5Cpsi%29sin%28%5Ctheta%29sin%28%5Cphi%29%20&plus;%20cos%28%5Cpsi%29cos%28%5Cphi%29%20%26%20sin%28%5Cpsi%29sin%28%5Ctheta%29cos%28%5Cphi%29%20-%20cos%28%5Cpsi%29sin%28%5Cphi%29%20%5C%5C%20-sin%28%5Ctheta%29%20%26%20cos%28%5Ctheta%29sin%28%5Cphi%29%20%26%20cos%28%5Ctheta%29cos%28%5Cphi%29%20%5Cend%7Bbmatrix%7D%20%5C%5C%20%26%3D%20%5Cbegin%7Bbmatrix%7D%200%20%26%200%20%26%201%20%5C%5C%20cos%28%5Cpsi%29sin%28%5Cphi%29%20&plus;%20sin%28%5Cpsi%29cos%28%5Cphi%29%20%26%20cos%28%5Cpsi%29cos%28%5Cphi%29%20-%20sin%28%5Cpsi%29sin%28%5Cphi%29%20%26%200%20%5C%5C%20-cos%28%5Cpsi%29cos%28%5Cphi%29%20&plus;%20sin%28%5Cpsi%29sin%28%5Cphi%29%20%26%20sin%28%5Cpsi%29cos%28%5Cphi%29%20&plus;%20cos%28%5Cpsi%29sin%28%5Cphi%29%20%26%200%20%5Cend%7Bbmatrix%7D%20%5C%5C%20%26%3D%20%5Cbegin%7Bbmatrix%7D%200%20%26%200%20%26%201%20%5C%5C%20sin%28%5Cpsi&plus;%5Cphi%29%20%26%20cos%28%5Cpsi&plus;%5Cphi%29%20%26%200%20%5C%5C%20-cos%28%5Cpsi&plus;%5Cphi%29%20%26%20sin%28%5Cpsi&plus;%5Cphi%29%20%26%200%20%5Cend%7Bbmatrix%7D%20%5Cend%7Balignment%7D)
+![eq:gimbal_lock](https://latex.codecogs.com/gif.latex?%5Cbegin%7Balignment%7D%20%5Cmathbf%7BR%7D%28%5Cphi%2C%20%5Ctheta%2C%20%5Cpsi%29%20%26%3D%20%5Cbegin%7Bbmatrix%7D%200%20%26%200%20%26%201%20%5C%5C%20cos%28%5Cpsi%29sin%28%5Cphi%29%20&plus;%20sin%28%5Cpsi%29cos%28%5Cphi%29%20%26%20cos%28%5Cpsi%29cos%28%5Cphi%29%20-%20sin%28%5Cpsi%29sin%28%5Cphi%29%20%26%200%20%5C%5C%20-cos%28%5Cpsi%29cos%28%5Cphi%29%20&plus;%20sin%28%5Cpsi%29sin%28%5Cphi%29%20%26%20sin%28%5Cpsi%29cos%28%5Cphi%29%20&plus;%20cos%28%5Cpsi%29sin%28%5Cphi%29%20%26%200%20%5Cend%7Bbmatrix%7D%20%5C%5C%20%26%3D%20%5Cbegin%7Bbmatrix%7D%200%20%26%200%20%26%201%20%5C%5C%20sin%28%5Cpsi&plus;%5Cphi%29%20%26%20cos%28%5Cpsi&plus;%5Cphi%29%20%26%200%20%5C%5C%20-cos%28%5Cpsi&plus;%5Cphi%29%20%26%20sin%28%5Cpsi&plus;%5Cphi%29%20%26%200%20%5Cend%7Bbmatrix%7D%20%5Cend%7Balignment%7D)
 
 
 ### Pros and Cons of rotation matri
