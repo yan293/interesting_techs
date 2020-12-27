@@ -50,15 +50,18 @@ Euler angles are a set of three angles representing rotations around three (x, y
 - **Pitch** ![pitch](https://latex.codecogs.com/gif.latex?%5Ctheta) about y-axis
 - **Yaw** ![yaw](https://latex.codecogs.com/gif.latex?%5Cpsi) about z-axis
 
-### Rotate around <math>x</math> axis
+
+### Elementary rotations
+
+#### Rotate around <math>x</math> axis (![eq:rx](https://latex.codecogs.com/gif.latex?%5Ctheta_x%20%3D%20%5Cphi)
 ![eq:rot_mat_x](https://latex.codecogs.com/gif.latex?R_x%20%3D%20%5Cbegin%7Bbmatrix%7D%201%20%26%200%20%26%200%20%5C%5C%200%20%26%20cos%28%5Ctheta_x%29%20%26%20-sin%28%5Ctheta_x%29%20%5C%5C%200%20%26%20sin%28%5Ctheta_x%29%20%26%20cos%28%5Ctheta_x%29%20%5Cend%7Bbmatrix%7D)
 
 
-### Rotate around <math>y</math> axis
+#### Rotate around <math>y</math> axis (![eq:ry](https://latex.codecogs.com/gif.latex?%5Ctheta_y%20%3D%20%5Ctheta)
 ![eq:rot_mat_y](https://latex.codecogs.com/gif.latex?R_y%20%3D%20%5Cbegin%7Bbmatrix%7D%20cos%28%5Ctheta_y%29%20%26%200%20%26%20sin%28%5Ctheta_y%29%20%5C%5C%200%20%26%201%20%26%200%20%5C%5C%20-sin%28%5Ctheta_y%29%20%26%200%20%26%20cos%28%5Ctheta_y%29%20%5Cend%7Bbmatrix%7D)
 
 
-### Rotate around <math>x</math> axis
+#### Rotate around <math>x</math> axis (![eq:rz](https://latex.codecogs.com/gif.latex?%5Ctheta_z%20%3D%20%5Cpsi)
 ![eq:rot_mat_y](https://latex.codecogs.com/gif.latex?R_z%20%3D%20%5Cbegin%7Bbmatrix%7D%20cos%28%5Ctheta_z%29%20%26%20-sin%28%5Ctheta_z%29%20%26%200%20%5C%5C%20sin%28%5Ctheta_z%29%20%26%20cos%28%5Ctheta_z%29%20%26%200%20%5C%5C%200%20%26%200%20%26%201%20%5Cend%7Bbmatrix%7D)
 
 ### Rotation using Proper Euler Angles (6 ways)
