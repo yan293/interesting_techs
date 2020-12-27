@@ -170,10 +170,10 @@ We can then use a [1x3] vector to represent the Rodrigues transform:
 
 #### Pros:
 - No Gimbal lock
-- Less variables
+- Less variables than rotation matrix
 
 #### Cons:
-- Gimbal lock
+- Rodrigues parameters have a singularity at ![eq:singularity](https://latex.codecogs.com/gif.latex?%5Calpha%20%3D%20180%5E%5Ccirc) degree.
 
 <!------------------------------------------------>
 
