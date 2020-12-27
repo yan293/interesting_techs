@@ -152,10 +152,18 @@ When the pich angle is pi/2, then we can not distinguish the roll and yaw angles
 
 Instead of rotate a vector  by multiplying a [3x3] rotation matrix, we can use the Rodrigues formula to rotate the vector.
 
+### Rodrigues transform
+
 Let the original vector be **u**, we now rotate it around a direction vector **n** by angle ![alpha](https://latex.codecogs.com/gif.latex?%5Calpha).  The obtained vector **v** can be denoted as:
 
 ![eq:rodrigue](https://latex.codecogs.com/gif.latex?%5Cmathbf%7Bv%7D%20%3D%20%281%20-%20cos%28%5Calpha%29%29%5Ccdot%20%3C%5Cmathbf%7Bu%7D%2C%20%5Cmathbf%7Bn%7D%3E%20%5Ccdot%20%5Cmathbf%7Bn%7D%20&plus;%20cos%28%5Calpha%29%20%5Cmathbf%7Bu%7D%20-%20sin%28%5Calpha%29%20%28%5Cmathbf%7Bn%7D%20%5Ctimes%20%5Cmathbf%7Bu%7D%29)
 
+
+### Rodrigues vector
+
+We can then use a [1x3] vector to represent the Rodrigues transform:
+
+![eq:rod_vect](https://latex.codecogs.com/gif.latex?%5Cmathbf%7BRod%7D%20%3D%20%28a_1%2C%20a_2%2C%20a_3%29%2C%20%7C%5Cmathbf%7BRod%7D%7C%20%3D%20%5Calpha%2C%20%5Cfrac%7B%5Cmathbf%7BRod%7D%7D%7B%7C%5Cmathbf%7BRod%7D%7C%7D%20%3D%20%5Cmathbf%7Bn%7D)
 
 <!------------------------------------------------>
 
