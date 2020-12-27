@@ -6,7 +6,7 @@
 
 ## Rodrigues Angles
 
-$a_x = x * y$
+<math>a_x = x * y</math>
 
 \begin{equation}
 a_x = x * y
