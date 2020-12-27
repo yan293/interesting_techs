@@ -81,11 +81,23 @@ A rotation matrix can be formed from a maximum of 3 sequential rotations about t
 #### Euler Angles
 
 Rotate along on axis twice (1st and 3rd).
+- XYX
+- XZX
+- YXY
+- YZY
+- ZXZ
+- ZYZ
 
 
 #### Cardan (or Tait–Bryan) Angles
 
 Rotate along each primary axis once.
+- XYZ
+- XZY
+- YXZ
+- YZX
+- ZXY
+- ZYX
 
 
 ### Rotation using Proper Euler Angles (6 ways)
