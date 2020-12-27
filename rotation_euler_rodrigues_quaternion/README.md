@@ -1,4 +1,4 @@
-# Rotation
+# Rotation Representations
 
 In general, there are 4 different representations of rotation: (1) Rotation matrix; (2) Euler rotation angles; (3) Rodrigues vector; (4) Quaternion.  Each of the four representations has pros and cons.
 
