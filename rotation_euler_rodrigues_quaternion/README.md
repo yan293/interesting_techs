@@ -6,6 +6,6 @@
 
 ## Rodrigues Angles
 
-`$a_x = x * y$`
+$a_x = x * y$
 
 ## Quaternion
