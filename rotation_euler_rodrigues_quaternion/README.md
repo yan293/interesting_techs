@@ -70,7 +70,13 @@ Euler angles are a set of three angles representing rotations around three (x, y
 
 ### Rotation matrix to elementary Euler angles
 
-A rotation matrix can be formed from a maximum of 3 sequential rotations about the primary axes:  ![eq:mat_to_euler](https://latex.codecogs.com/gif.latex?%5Cmathbf%7BR%7D%28%5Cphi%2C%20%5Ctheta%2C%20%5Cpsi%29).
+A rotation matrix can be formed from a maximum of 3 sequential rotations about the primary axes:
+
+![eq:mat_to_euler](https://latex.codecogs.com/gif.latex?%5Cmathbf%7BR%7D%28%5Cphi%2C%20%5Ctheta%2C%20%5Cpsi%29).
+
+- These rotations can be in any sequence, but not the same axis in succession. Since rotating along the same axis twice equals to rotating the axis once with a large angle.
+
+![eq:two_euler](https://latex.codecogs.com/gif.latex?%5Cmathbf%7BR%7D_x%28%5Cphi%29%5Cmathbf%7BR%7D_x%28%5Cphi%29%20%3D%20%5Cmathbf%7BR%7D_x%282%5Cphi%29)
 
 ### Rotation using Proper Euler Angles (6 ways)
 
