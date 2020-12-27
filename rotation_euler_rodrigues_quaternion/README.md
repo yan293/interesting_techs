@@ -8,6 +8,6 @@
 
 ![equation](https://latex.codecogs.com/gif.latex?a_x%20%3D%20x%20*%20y)
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{bmatrix}&space;1&space;&&space;2&space;&&space;3\\&space;a&space;&&space;b&space;&&space;c&space;\end{bmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{bmatrix}&space;1&space;&&space;2&space;&&space;3\\&space;a&space;&&space;b&space;&&space;c&space;\end{bmatrix}" title="\begin{bmatrix} 1 & 2 & 3\\ a & b & c \end{bmatrix}" /></a>
+![eq2](https://latex.codecogs.com/gif.latex?R%20%3D%20%5Cbegin%7Bbmatrix%7D%201%20%26%200%20%26%200%20%5C%5C%200%20%26%20cos%28%5Ctheta%29%20%26%20-sin%28%5Ctheta%29%20%5C%5C%200%20%26%20sin%28%5Ctheta%29%20%26%20cos%28%5Ctheta%29%20%5Cend%7Bbmatrix%7D)
 
 ## Quaternion
