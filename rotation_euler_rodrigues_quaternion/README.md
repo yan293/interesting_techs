@@ -1,11 +1,22 @@
 # Rotation
 
+\mathbf{R} = \begin{bmatrix}
+r_{11} & r_{12} & r_{13} \\
+r_{21} & r_{22} & r_{23} \\
+r_{31} & r_{32} & r_{33}
+\end{bmatrix} = \begin{bmatrix}
+\mathbf{r_{1}} & \mathbf{r_{2}} & \mathbf{r_{3}}
+\end{bmatrix}
+
 
 <!------------------------------------------------>
 
 ## Rotation Matrix
 
-![eq:rot_mat_x](https://latex.codecogs.com/gif.latex?R%20%3D%20%5Cbegin%7Bbmatrix%7D%20r_%7B11%7D%20%26%20r_%7B12%7D%20%26%20r_%7B13%7D%20%5C%5C%20r_%7B21%7D%20%26%20r_%7B22%7D%20%26%20r_%7B23%7D%20%5C%5C%20r_%7B31%7D%20%26%20r_%7B32%7D%20%26%20r_%7B33%7D%20%5Cend%7Bbmatrix%7D)
+![eq:rot_mat](https://latex.codecogs.com/gif.latex?%5Cmathbf%7BR%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%20r_%7B11%7D%20%26%20r_%7B12%7D%20%26%20r_%7B13%7D%20%5C%5C%20r_%7B21%7D%20%26%20r_%7B22%7D%20%26%20r_%7B23%7D%20%5C%5C%20r_%7B31%7D%20%26%20r_%7B32%7D%20%26%20r_%7B33%7D%20%5Cend%7Bbmatrix%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%20%5Cmathbf%7Br_%7B1%7D%7D%20%26%20%5Cmathbf%7Br_%7B2%7D%7D%20%26%20%5Cmathbf%7Br_%7B3%7D%7D%20%5Cend%7Bbmatrix%7D)
+
+- Each  column is a 3D univector: ![eq:col_norm](https://latex.codecogs.com/gif.latex?%7C%7C%5Cmathbf%7Br_%7B1%7D%7D%7C%7C%20%3D%20%7C%7C%5Cmathbf%7Br_%7B2%7D%7D%7C%7C%20%3D%20%7C%7C%5Cmathbf%7Br_%7B3%7D%7D%7C%7C%20%3D%201)
+
 
 #### Pros:
 - Uniquely represents a rotation
