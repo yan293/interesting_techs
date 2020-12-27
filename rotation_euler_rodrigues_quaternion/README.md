@@ -12,6 +12,19 @@ r_{31} & r_{32} & r_{33}
 \mathbf{r_{1}} & \mathbf{r_{2}} & \mathbf{r_{3}}
 \end{bmatrix}
 
+\begin{alignment}
+\mathbf{R}(\phi, \theta, \psi) &= \begin{bmatrix}
+cos(\psi)cos(\theta) & cos(\psi)sin(\theta)sin(\phi) - sin(\psi)cos(\phi) & cos(\psi)sin(\theta)cos(\phi) + sin(\psi)sin(\phi) \\
+sin(\psi)cos(\theta) & sin(\psi)sin(\theta)sin(\phi) + cos(\psi)cos(\phi) & sin(\psi)sin(\theta)cos(\phi) - cos(\psi)sin(\phi) \\
+-sin(\theta) & cos(\theta)sin(\phi) & cos(\theta)cos(\phi)
+\end{bmatrix} \\
+&= \begin{bmatrix}
+r_{11} & r_{12} & r_{13} \\
+r_{21} & r_{22} & r_{23} \\
+r_{31} & r_{32} & r_{33}
+\end{bmatrix}
+\end{alignment}
+
 
 <!------------------------------------------------>
 
@@ -110,7 +123,11 @@ Rotate along each primary axis once, 3x2x1 = 6.
 
 If rotating arong x-axis, then y-axis, then z-axis:
 
-![eq:mat_to_roo_pitch_yaw](https://latex.codecogs.com/gif.latex?%5Cbegin%7Balignment%7D%20%5Cmathbf%7BR%7D%28%5Cphi%2C%20%5Ctheta%2C%20%5Cpsi%29%20%26%3D%20%5Cbegin%7Bbmatrix%7D%20cos%28%5Cpsi%29cos%28%5Ctheta%29%20%26%20cos%28%5Cpsi%29sin%28%5Ctheta%29sin%28%5Cphi%29%20-%20sin%28%5Cpsi%29cos%28%5Cphi%29%20%26%20cos%28%5Cpsi%29sin%28%5Ctheta%29cos%28%5Cphi%29%20&plus;%20sin%28%5Cpsi%29sin%28%5Cphi%29%20%5C%5C%20sin%28%5Cpsi%29cos%28%5Ctheta%29%20%26%20sin%28%5Cpsi%29sin%28%5Ctheta%29sin%28%5Cphi%29%20&plus;%20cos%28%5Cpsi%29cos%28%5Cphi%29%20%26%20sin%28%5Cpsi%29sin%28%5Ctheta%29cos%28%5Cphi%29%20-%20cos%28%5Cpsi%29sin%28%5Cphi%29%20%5C%5C%20-sin%28%5Ctheta%29%20%26%20cos%28%5Ctheta%29sin%28%5Cphi%29%20%26%20cos%28%5Ctheta%29cos%28%5Cphi%29%20%5Cend%7Bbmatrix%7D%5C%5C%20%26%3D%20%5Cbegin%7Bbmatrix%7D%20r_%7B11%7D%20%26%20r_%7B12%7D%20%26%20r_%7B13%7D%20%5C%5C%20r_%7B21%7D%20%26%20r_%7B22%7D%20%26%20r_%7B23%7D%20%5C%5C%20r_%7B31%7D%20%26%20r_%7B32%7D%20%26%20r_%7B33%7D%20%5Cend%7Bbmatrix%7D%20%5Cend%7Balignment%7D)
+![eq:mat_to_roll_pitch_yaw](https://latex.codecogs.com/gif.latex?%5Cbegin%7Balignment%7D%20%5Cmathbf%7BR%7D%28%5Cphi%2C%20%5Ctheta%2C%20%5Cpsi%29%20%26%3D%20%5Cbegin%7Bbmatrix%7D%20cos%28%5Cpsi%29cos%28%5Ctheta%29%20%26%20cos%28%5Cpsi%29sin%28%5Ctheta%29sin%28%5Cphi%29%20-%20sin%28%5Cpsi%29cos%28%5Cphi%29%20%26%20cos%28%5Cpsi%29sin%28%5Ctheta%29cos%28%5Cphi%29%20&plus;%20sin%28%5Cpsi%29sin%28%5Cphi%29%20%5C%5C%20sin%28%5Cpsi%29cos%28%5Ctheta%29%20%26%20sin%28%5Cpsi%29sin%28%5Ctheta%29sin%28%5Cphi%29%20&plus;%20cos%28%5Cpsi%29cos%28%5Cphi%29%20%26%20sin%28%5Cpsi%29sin%28%5Ctheta%29cos%28%5Cphi%29%20-%20cos%28%5Cpsi%29sin%28%5Cphi%29%20%5C%5C%20-sin%28%5Ctheta%29%20%26%20cos%28%5Ctheta%29sin%28%5Cphi%29%20%26%20cos%28%5Ctheta%29cos%28%5Cphi%29%20%5Cend%7Bbmatrix%7D%5C%5C%20%26%3D%20%5Cbegin%7Bbmatrix%7D%20r_%7B11%7D%20%26%20r_%7B12%7D%20%26%20r_%7B13%7D%20%5C%5C%20r_%7B21%7D%20%26%20r_%7B22%7D%20%26%20r_%7B23%7D%20%5C%5C%20r_%7B31%7D%20%26%20r_%7B32%7D%20%26%20r_%7B33%7D%20%5Cend%7Bbmatrix%7D%20%5Cend%7Balignment%7D)
+
+then,
+
+![eq:mat_to_roll_pitch_yaw_2](https://latex.codecogs.com/gif.latex?%5Cphi%20%3D%20atan2%28r_%7B32%7D%2C%20r_%7B33%7D%29%5C%5C%20%5Cpsi%20%3D%20atan2%28r_%7B21%7D%2C%20r_%7B11%7D%29%5C%5C%20%5Ctheta%20%3D%20%5Cbegin%7Bcases%7D%20atan2%28-r_%7B31%7D%2C%20%5Cfrac%7Br_%7B21%7D%7D%7Bsin%28%5Cpsi%29%7D%29%2C%20%26%20%5Ctext%7Bif%7D%5C%20cos%28%5Cpsi%29%3D0%20%5C%5C%20atan2%28-r_%7B31%7D%2C%20%5Cfrac%7Br_%7B11%7D%7D%7Bcos%28%5Cpsi%29%7D%29%2C%20%26%20%5Ctext%7Botherwise%7D%20%5Cend%7Bcases%7D)
 
 
 ### Gimbal Lock
