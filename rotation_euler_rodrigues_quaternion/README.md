@@ -170,7 +170,16 @@ We can then use a [1x3] vector to represent the Rodrigues transform:
 
 ### Rodrigues Vector and Rotation Matrix
 
-Since ![eq_cross_prod](https://latex.codecogs.com/gif.latex?%5Cmathbf%7Bn%7D%20%5Ctimes%20%5Cmathbf%7Bu%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%200%20%26%20-n_x%20%26%20n_y%20%5C%5C%20n_z%20%26%200%20%26%20-n_x%20%5C%5C%20-n_y%20%26%20n_x%20%26%200%20%5Cend%7Bbmatrix%7D%5Cbegin%7Bbmatrix%7D%20u_x%20%5C%5C%20u_y%20%5C%5C%20u_z%20%5Cend%7Bbmatrix%7D%20%3D%20%5Cmathbf%7BN%7D%5Cbegin%7Bbmatrix%7D%20u_x%20%5C%5C%20u_y%20%5C%5C%20u_z%20%5Cend%7Bbmatrix%7D)
+Since,
+
+![eq_cross_prod](https://latex.codecogs.com/gif.latex?%5Cmathbf%7Bn%7D%20%5Ctimes%20%5Cmathbf%7Bu%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%200%20%26%20-n_x%20%26%20n_y%20%5C%5C%20n_z%20%26%200%20%26%20-n_x%20%5C%5C%20-n_y%20%26%20n_x%20%26%200%20%5Cend%7Bbmatrix%7D%5Cbegin%7Bbmatrix%7D%20u_x%20%5C%5C%20u_y%20%5C%5C%20u_z%20%5Cend%7Bbmatrix%7D%20%3D%20%5Cmathbf%7BN%7D%5Cbegin%7Bbmatrix%7D%20u_x%20%5C%5C%20u_y%20%5C%5C%20u_z%20%5Cend%7Bbmatrix%7D)
+
+We can obtain:
+
+![eq:rod_mat](https://latex.codecogs.com/gif.latex?%5Cmathbf%7Bv%7D%20%3D%20%5Cmathbf%7Bu%7D%20&plus;%20sin%28%5Calpha%29%5Cmathbf%7BN%7D%5Cmathbf%7Bu%7D%20&plus;%20%281-cos%28%5Calpha%29%29%5Cmathbf%7BN%7D%5E2%5Cmathbf%7Bu%7D%20%3D%20%5Cmathbf%7BR%7D%5Cmathbf%7Bu%7D)
+
+
+![eq:rod_mat_2](https://latex.codecogs.com/gif.latex?%5Cmathbf%7BR%7D%20%3D%20%5Cmathbf%7BI%7D%20&plus;%20sin%28%5Calpha%29%5Cmathbf%7BN%7D%20&plus;%20%281-cos%28%5Calpha%29%29%5Cmathbf%7BN%7D%5E2)
 
 
 ### Pros and Cons of Rodrigues vector
