@@ -6,7 +6,7 @@
 
 ## Rodrigues Angles
 
-<math>a_x = x * y</math>
+![equation](https://latex.codecogs.com/gif.latex?a_x%20%3D%20x%20*%20y)
 
 \begin{equation}
 a_x = x * y
