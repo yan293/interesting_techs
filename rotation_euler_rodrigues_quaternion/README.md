@@ -24,10 +24,10 @@ r_{31} & r_{32} & r_{33}
 - All columns are orthonomal to each other ![eq:col_prod](https://latex.codecogs.com/gif.latex?%5Cmathbf%7Br_%7B1%7D%7D%5ET%20%5Cmathbf%7Br_%7B2%7D%7D%20%3D%20%5Cmathbf%7Br_%7B1%7D%7D%5ET%20%5Cmathbf%7Br_%7B3%7D%7D%20%3D%20%5Cmathbf%7Br_%7B2%7D%7D%5ET%20%5Cmathbf%7Br_%7B3%7D%7D%20%3D%200)
 
 
-#### Pros:
+#### Pros of rotation matrix:
 - Uniquely represents a rotation
 
-#### Cons:
+#### Cons of rotation matrix:
 - 9 variables to represent 3 variables (redundant)
 
 
