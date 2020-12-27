@@ -158,6 +158,8 @@ Let the original vector be **u**, we now rotate it around a direction vector **n
 
 ![eq:rodrigue](https://latex.codecogs.com/gif.latex?cos%28%5Calpha%29%5Cmathbf%7Bu%7D%20&plus;%20%281%20-%20cos%28%5Calpha%29%29%28%5Cmathbf%7Bn%7D%5Ccdot%5Cmathbf%7Bu%7D%29%5Cmathbf%7Bn%7D%20&plus;%20sin%28%5Calpha%29%28%5Cmathbf%7Bn%7D%5Ctimes%5Cmathbf%7Bu%7D%29)
 
+Dirivation of above equation can be found online.  Here is a [Youtube's derivation](https://www.youtube.com/watch?v=Fh3nMi87cB8) which I think is clear and vivid.
+
 
 ### Rodrigues vector
 
@@ -173,7 +175,7 @@ We can then use a [1x3] vector to represent the Rodrigues transform:
 - Less variables than rotation matrix
 
 #### Cons:
-- Rodrigues parameters have a singularity at ![eq:singularity](https://latex.codecogs.com/gif.latex?%5Calpha%20%3D%20180%5E%5Ccirc) degree.
+- Rodrigues parameters have a singularity at ![eq:singularity](https://latex.codecogs.com/gif.latex?%5Calpha%20%3D%20180%5E%5Ccirc).
 
 <!------------------------------------------------>
 
