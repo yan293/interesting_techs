@@ -78,6 +78,7 @@ A rotation matrix can be formed from a maximum of 3 sequential rotations about t
 
 - In total there are 3x2x2 = **12 combinations**.
 
+
 #### Euler Angles
 
 Rotate along on axis twice (1st and 3rd), 3x2x1 = 6.
@@ -100,9 +101,17 @@ Rotate along each primary axis once, 3x2x1 = 6.
 - ZYX
 
 
-### Rotation using Proper Euler Angles (6 ways)
+#### Order of rotations is important
+- e.g. ![eq:euler_order](https://latex.codecogs.com/gif.latex?%5Cmathbf%7BR%7D_x%5Cmathbf%7BR%7D_y%5Cmathbf%7BR%7D_z%5Cneq%5Cmathbf%7BR%7D_z%5Cmathbf%7BR%7D_y%5Cmathbf%7BR%7D_x)
+- Matrices are not commutative.
 
-### Rotation using Trait-Bryan (6 ways)
+
+#### Roll, Pitch, and Yaw from Rotation
+
+If rotating arong x-axis, then y-axis, then z-axis:
+
+![eq:mat_to_roo_pitch_yaw](https://latex.codecogs.com/gif.latex?%5Cbegin%7Balignment%7D%20%5Cmathbf%7BR%7D%28%5Cphi%2C%20%5Ctheta%2C%20%5Cpsi%29%20%26%3D%20%5Cbegin%7Bbmatrix%7D%20cos%28%5Cpsi%29cos%28%5Ctheta%29%20%26%20cos%28%5Cpsi%29sin%28%5Ctheta%29sin%28%5Cphi%29%20-%20sin%28%5Cpsi%29cos%28%5Cphi%29%20%26%20cos%28%5Cpsi%29sin%28%5Ctheta%29cos%28%5Cphi%29%20&plus;%20sin%28%5Cpsi%29sin%28%5Cphi%29%20%5C%5C%20sin%28%5Cpsi%29cos%28%5Ctheta%29%20%26%20sin%28%5Cpsi%29sin%28%5Ctheta%29sin%28%5Cphi%29%20&plus;%20cos%28%5Cpsi%29cos%28%5Cphi%29%20%26%20sin%28%5Cpsi%29sin%28%5Ctheta%29cos%28%5Cphi%29%20-%20cos%28%5Cpsi%29sin%28%5Cphi%29%20%5C%5C%20-sin%28%5Ctheta%29%20%26%20cos%28%5Ctheta%29sin%28%5Cphi%29%20%26%20cos%28%5Ctheta%29cos%28%5Cphi%29%20%5Cend%7Bbmatrix%7D%5C%5C%20%26%3D%20%5Cbegin%7Bbmatrix%7D%20r_%7B11%7D%20%26%20r_%7B12%7D%20%26%20r_%7B13%7D%20%5C%5C%20r_%7B21%7D%20%26%20r_%7B22%7D%20%26%20r_%7B23%7D%20%5C%5C%20r_%7B31%7D%20%26%20r_%7B32%7D%20%26%20r_%7B33%7D%20%5Cend%7Bbmatrix%7D%20%5Cend%7Balignment%7D)
+
 
 ### Gimbal Lock
 
