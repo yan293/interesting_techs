@@ -144,9 +144,17 @@ When the pich angle is pi/2, then we can not distinguish the roll and yaw angles
 #### Cons:
 - Gimbal lock
 
+
+
 <!------------------------------------------------>
 
 ## 3. Rodrigues Vector
+
+Instead of rotate a vector  by multiplying a [3x3] rotation matrix, we can use the Rodrigues formula to rotate the vector.
+
+Let the original vector be ![u][https://latex.codecogs.com/gif.latex?%5Cmathbf%7Bu%7D], we now rotate it around a direction vector ![n][https://latex.codecogs.com/gif.latex?%5Cmathbf%7Bn%7D] by angle ![alpha](https://latex.codecogs.com/gif.latex?%5Calpha).  The obtained vector ![v](https://latex.codecogs.com/gif.latex?%5Cmathbf%7Bv%7D) can be denoted as:
+
+![eq:rodrigue](https://latex.codecogs.com/gif.latex?%5Cmathbf%7Bv%7D%20%3D%20%281%20-%20cos%28%5Calpha%29%29%5Ccdot%20%3C%5Cmathbf%7Bu%7D%2C%20%5Cmathbf%7Bn%7D%3E%20%5Ccdot%20%5Cmathbf%7Bn%7D%20&plus;%20cos%28%5Calpha%29%20%5Cmathbf%7Bu%7D%20-%20sin%28%5Calpha%29%20%28%5Cmathbf%7Bn%7D%20%5Ctimes%20%5Cmathbf%7Bu%7D%29)
 
 
 <!------------------------------------------------>
