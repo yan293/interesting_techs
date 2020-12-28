@@ -223,7 +223,7 @@ Let the original vector be **u**, we now rotate it around a direction vector **n
 ### Pros and Cons of Rodrigues vector
 
 #### Pros:
-- No Gimbal lock
+- No Gimbal lock, no singularity
 - Less variables than rotation matrix
 
 #### Cons:
