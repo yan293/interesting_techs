@@ -214,6 +214,8 @@ Let the original vector be **u**, we now rotate it around a direction vector **n
 - ![eq:quat_prop_2](https://latex.codecogs.com/gif.latex?%281%2C%200%2C%200%2C%200%29%20%5Clongrightarrow%201)
 - ![eq:quat_prop_3](https://latex.codecogs.com/gif.latex?%280%2C%201%2C%200%2C%200%29%20%5Clongrightarrow%20%5Cpi)
 - ![eq:quat_prop_4](https://latex.codecogs.com/gif.latex?%28%5Cfrac%7B1%7D%7B%5Csqrt%7B2%7D%7D%2C%20%5Cfrac%7B1%7D%7B%5Csqrt%7B2%7D%7D%2C%200%2C%200%29%20%5Clongrightarrow%20%5Cfrac%7B%5Cpi%7D%7B2%7D)
+- The same reference vector and rotation angle magnitude, opposite rotation direction: (w, -x, -y, -z).
+- If the reference vector is **-n**, and the rotation angle is ![2pi-alpha](https://latex.codecogs.com/gif.latex?%282%5Cpi-%5Calpha%29).  It is the same as the reference vector is **n**, and the rotation angle is [alpha](https://latex.codecogs.com/gif.latex?%5Calpha)
 
 
 ### Pros and Cons of Rodrigues vector
