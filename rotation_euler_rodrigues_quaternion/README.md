@@ -4,27 +4,6 @@ In general, there are 4 different representations of rotation: (1) Rotation matr
 
 The blog gives a brief summary of the 4 rotation representation methods and their pros and cons.
 
-\mathbf{R} = \begin{bmatrix}
-r_{11} & r_{12} & r_{13} \\
-r_{21} & r_{22} & r_{23} \\
-r_{31} & r_{32} & r_{33}
-\end{bmatrix} = \begin{bmatrix}
-\mathbf{r_{1}} & \mathbf{r_{2}} & \mathbf{r_{3}}
-\end{bmatrix}
-
-\begin{alignment}
-\mathbf{R}(\phi, \theta, \psi) &= \begin{bmatrix}
-cos(\psi)cos(\theta) & cos(\psi)sin(\theta)sin(\phi) - sin(\psi)cos(\phi) & cos(\psi)sin(\theta)cos(\phi) + sin(\psi)sin(\phi) \\
-sin(\psi)cos(\theta) & sin(\psi)sin(\theta)sin(\phi) + cos(\psi)cos(\phi) & sin(\psi)sin(\theta)cos(\phi) - cos(\psi)sin(\phi) \\
--sin(\theta) & cos(\theta)sin(\phi) & cos(\theta)cos(\phi)
-\end{bmatrix} \\
-&= \begin{bmatrix}
-r_{11} & r_{12} & r_{13} \\
-r_{21} & r_{22} & r_{23} \\
-r_{31} & r_{32} & r_{33}
-\end{bmatrix}
-\end{alignment}
-
 
 <!------------------------------------------------>
 
