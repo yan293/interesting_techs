@@ -206,7 +206,7 @@ We can use a quaternion of 4 variables to represent rotation: (w, x, y, z).
 
 Let the original vector be **u**, we now rotate it around a direction vector **n** by angle ![alpha](https://latex.codecogs.com/gif.latex?%5Calpha), and we obtain the new vector **v**. Then,
 
-![eq:quat_rod](https://latex.codecogs.com/gif.latex?%5Cbegin%7Balignment%7D%20w%20%26%3D%20cos%28%5Cfrac%7B%5Calpha%7D%7B2%7D%29%5C%5C%20x%20%26%3D%20v_x%20%5Ccdot%20sin%28%5Cfrac%7B%5Calpha%7D%7B2%7D%29%5C%5C%20y%20%26%3D%20v_y%20%5Ccdot%20sin%28%5Cfrac%7B%5Calpha%7D%7B2%7D%29%5C%5C%20z%20%26%3D%20v_z%20%5Ccdot%20sin%28%5Cfrac%7B%5Calpha%7D%7B2%7D%29%5C%5C%20%5Cend%7Balignment%7D)
+![eq:quat_rod](https://latex.codecogs.com/gif.latex?%5Cbegin%7Balignment%7D%20w%20%26%3D%20cos%28%5Cfrac%7B%5Calpha%7D%7B2%7D%29%5C%5C%20x%20%26%3D%20u_x%20%5Ccdot%20sin%28%5Cfrac%7B%5Calpha%7D%7B2%7D%29%5C%5C%20y%20%26%3D%20u_y%20%5Ccdot%20sin%28%5Cfrac%7B%5Calpha%7D%7B2%7D%29%5C%5C%20z%20%26%3D%20u_z%20%5Ccdot%20sin%28%5Cfrac%7B%5Calpha%7D%7B2%7D%29%5C%5C%20%5Cend%7Balignment%7D)
 
 
 ### Pros and Cons of Rodrigues vector
