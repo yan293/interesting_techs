@@ -209,6 +209,13 @@ Let the original vector be **u**, we now rotate it around a direction vector **n
 ![eq:quat_rod](https://latex.codecogs.com/gif.latex?%5Cbegin%7Balignment%7D%20w%20%26%3D%20cos%28%5Cfrac%7B%5Calpha%7D%7B2%7D%29%5C%5C%20x%20%26%3D%20u_x%20%5Ccdot%20sin%28%5Cfrac%7B%5Calpha%7D%7B2%7D%29%5C%5C%20y%20%26%3D%20u_y%20%5Ccdot%20sin%28%5Cfrac%7B%5Calpha%7D%7B2%7D%29%5C%5C%20z%20%26%3D%20u_z%20%5Ccdot%20sin%28%5Cfrac%7B%5Calpha%7D%7B2%7D%29%5C%5C%20%5Cend%7Balignment%7D)
 
 
+### Quaternion properties
+- ![eq:quat_prop_1](https://latex.codecogs.com/gif.latex?%7Cq%7C%3D1)
+- ![eq:quat_prop_2](https://latex.codecogs.com/gif.latex?%281%2C%200%2C%200%2C%200%29%20%5Clongrightarrow%201)
+- ![eq:quat_prop_3](https://latex.codecogs.com/gif.latex?%280%2C%201%2C%200%2C%200%29%20%5Clongrightarrow%20%5Cpi)
+- ![eq:quat_prop_4](https://latex.codecogs.com/gif.latex?%28%5Cfrac%7B1%7D%7B%5Csqrt%7B2%7D%7D%2C%20%5Cfrac%7B1%7D%7B%5Csqrt%7B2%7D%7D%2C%200%2C%200%29%20%5Clongrightarrow%20%5Cfrac%7B%5Cpi%7D%7B2%7D)
+
+
 ### Pros and Cons of Rodrigues vector
 
 #### Pros:
