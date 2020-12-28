@@ -5,6 +5,7 @@ In general, there are 4 different representations of rotation: (1) Rotation matr
 The blog gives a brief summary of the 4 rotation representation methods and their pros and cons.
 
 
+
 <!------------------------------------------------>
 
 ## 1. Rotation Matrix
