@@ -197,6 +197,12 @@ We can obtain:
 
 ## 4. Quaternion
 
+We can use a quaternion of 4 variables to represent rotation: (w, x, y, z).
+
+![eq:quaternion](https://latex.codecogs.com/gif.latex?q%20%3D%20%28w%2C%20x%20i%2C%20y%20j%2C%20z%20k%29)
+### Quaternion and Rodrigues Vector
+
+
 
 ### Pros and Cons of Rodrigues vector
 
