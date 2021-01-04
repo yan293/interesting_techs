@@ -1,7 +1,7 @@
 ## Probability and Likelihood
 
 ### Probability
--Given distribution type (Gaussian, Gamma, Exponential), distribution parameters, the probalility number of a data.
+- Given distribution type (Gaussian, Gamma, Exponential), distribution parameters, the probalility number of a data.
 
 ![probability](https://latex.codecogs.com/gif.latex?p%28%5Ctext%7Bdata%7D%7C%5Ctheta_1%2C%20%5Ctheta_2%2C%20%5Ccdots%29)
 
@@ -10,7 +10,7 @@
 
 ### Likelihood
 
--Given data, the probalility number of a guessed distribution type and distribution parameters.
+- Given data, the probalility number of a guessed distribution type and distribution parameters.
 
 ![probability](https://latex.codecogs.com/gif.latex?p%28%5Ctext%7Bdata%7D%7C%5Ctheta_1%2C%20%5Ctheta_2%2C%20%5Ccdots%29)
 
